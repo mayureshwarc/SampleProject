@@ -1,3 +1,49 @@
   dataSet.Tables[0].TableName
 DataList1.DataSource = dataTable;
         DataList1.DataBind();
+using System;
+using System.Data;
+
+public partial class Default : System.Web.UI.Page
+{
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        if (!IsPostBack)
+        {
+            BindDataList();
+        }
+    }
+
+    private void BindDataList()
+    {
+        // Create a DataTable with multiple columns and a single row
+        DataTable originalTable = new DataTable();
+
+        // Define columns
+        originalTable.Columns.Add("Product Name", typeof(string));
+        originalTable.Columns.Add("Price", typeof(string));
+        originalTable.Columns.Add("Brand", typeof(string));
+        originalTable.Columns.Add("Warranty", typeof(string));
+        originalTable.Columns.Add("Availability", typeof(string));
+
+        // Add a single row of values
+        originalTable.Rows.Add("Laptop", "$1200", "XYZ", "1 Year", "In Stock");
+
+        // Convert this single row DataTable into another DataTable with "Name" and "Value"
+        DataTable transformedTable = new DataTable();
+        transformedTable.Columns.Add("Name", typeof(string));
+        transformedTable.Columns.Add("Value", typeof(string));
+
+        // Loop through the columns of the original table and add them to the new table
+        foreach (DataColumn column in originalTable.Columns)
+        {
+            string columnName = column.ColumnName;
+            string columnValue = originalTable.Rows[0][column].ToString(); // Get the value from the first row
+            transformedTable.Rows.Add(columnName, columnValue); // Add Name (Column Name) and Value (Row Value)
+        }
+
+        // Bind the transformed DataTable to the DataList
+        DataList1.DataSource = transformedTable;
+        DataList1.DataBind();
+    }
+}
