@@ -1,1 +1,3 @@
-Test
+  dataSet.Tables[0].TableName
+DataList1.DataSource = dataTable;
+        DataList1.DataBind();
