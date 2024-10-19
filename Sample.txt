@@ -2,3 +2,9 @@ Test
 SELECT OBJECT_NAME(referencing_id) AS CallingProcedure
 FROM sys.sql_expression_dependencies
 WHERE referenced_entity_name = 'procedure1';
+
+
+SELECT OBJECT_NAME(object_id) AS ProcedureName
+FROM sys.sql_modules
+WHERE definition LIKE '%WHERE status = ''Active''%'
+AND OBJECTPROPERTY(object_id, 'IsProcedure') = 1;
