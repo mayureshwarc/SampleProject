@@ -1,1 +1,4 @@
 Test
+SELECT OBJECT_NAME(referencing_id) AS CallingProcedure
+FROM sys.sql_expression_dependencies
+WHERE referenced_entity_name = 'procedure1';
