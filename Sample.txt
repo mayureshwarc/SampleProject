@@ -1,10 +1,42 @@
-Test
-SELECT OBJECT_NAME(referencing_id) AS CallingProcedure
-FROM sys.sql_expression_dependencies
-WHERE referenced_entity_name = 'procedure1';
+It sounds like you’re going through a very challenging situation. Here’s a draft email to help you convey your concerns to HR professionally and effectively. I’ve organized it to focus on the key points you raised:
 
+---
 
-SELECT OBJECT_NAME(object_id) AS ProcedureName
-FROM sys.sql_modules
-WHERE definition LIKE '%WHERE status = ''Active''%'
-AND OBJECTPROPERTY(object_id, 'IsProcedure') = 1;
+**Subject:** Request for Support Regarding Workplace Concerns
+
+Dear [HR Contact's Name],
+
+I am reaching out to report significant concerns about my current work environment, specifically the conduct of my manager, Mehak, and her manager, Disha, which I believe constitutes harassment and is affecting my ability to perform effectively.
+
+### Background and Contributions
+Since joining [Bank Name], I have dedicated over five years to the company, consistently delivering quality work across multiple departments. I initially worked in the BOTW department, where I received three positive ratings for my performance, led critical deliveries, and earned a retention bonus for my commitment. After BOTW’s closure in June 2023, I transferred to my current department, where I successfully managed the Exane migration without any issues, achieving a rating of four that year.
+
+### Recent Changes and Current Issues
+Since January, following a management change, my experience has shifted dramatically. From the outset, I have felt targeted by my new reporting authority, Mehak, and her manager, Disha, often without clear or justified reasoning. Below are some examples of the issues I am facing:
+
+1. **Excessive and Unreasonable Work Hours:** I am frequently asked to log out late and work on Saturdays, which I comply with. Recently, I was instructed to work overnight to resolve a longstanding issue, despite having flagged it a month ago.
+
+2. **Disregard for Personal Circumstances:** Despite notifying my managers that my wife and daughter were unwell, they continued to demand that I stay logged in and complete development tasks overnight.
+
+3. **Lack of Respect for Leave:** During my block leave, I was called repeatedly with work queries, and I still provided support. Recently, I was threatened with cancellation of my planned leave and warned that I might be put on a Performance Improvement Plan (PIP) for taking an unplanned leave, which I find unfair and punitive.
+
+4. **Inappropriate Assignment of Blame:** I resolved a critical production bug caused by a development Mehak authored, finding and fixing the issue after she struggled to replicate it. Additionally, after completing an assignment per my lead’s analysis, I was later blamed for a production issue arising from this work, despite the code having passed testing on UAT and client review.
+
+5. **Continuous Monitoring and Threat of PIP:** Every month, I am asked to provide incident reports for my work. Despite my proven track record and having resolved issues proactively, I am continuously threatened with a PIP, which only adds to the stressful work environment.
+
+### Request for Support
+The above incidents, compounded over the past few months, have created a hostile work environment, impacting my motivation and well-being. I am committed to delivering high-quality work, but I am finding it increasingly difficult to do so under these circumstances.
+
+I am reaching out to HR with the hope that my concerns will be addressed fairly, and that I will receive support in fostering a more positive and respectful work environment.
+
+Thank you for your attention to this matter. I am happy to provide supporting documentation, including message and call records, if needed, to substantiate my experiences.
+
+Sincerely,  
+[Your Full Name]  
+[Your Job Title]  
+[Bank Name]  
+[Your Contact Information]
+
+---
+
+Feel free to adjust any details as you see fit. I hope this letter helps you communicate your concerns clearly and respectfully to HR. Let me know if you'd like further adjustments.
