@@ -18,3 +18,5 @@ https://code.jquery.com/ui/1.13.2/jquery-ui.js
 https://code.jquery.com/ui/1.13.2/jquery-ui.min.js
 
 https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css
+
+https://code.jquery.com/jquery-migrate-3.3.3.min.js
