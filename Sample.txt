@@ -1,18 +1,13 @@
+Here are the direct download links for the files you requested:
 
-https://cdn.datatables.net/1.13.6/js/jquery.dataTables.js
+- jQuery 3.5.0 (minified):  
+  [https://code.jquery.com/jquery-3.5.0.min.js](https://code.jquery.com/jquery-3.5.0.min.js)
 
-https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js
+- jQuery Migrate 3.3.0 (minified):  
+  [https://code.jquery.com/jquery-migrate-3.3.0.min.js](https://code.jquery.com/jquery-migrate-3.3.0.min.js)
 
-https://cdn.datatables.net/1.13.6/css/jquery.dataTables.css
+- jQuery 3.5.0 (non-minified):  
+  [https://code.jquery.com/jquery-3.5.0.js](https://code.jquery.com/jquery-3.5.0.js)
 
-https://cdn.datatables.net/1.13.6/css/jquery.dataTables_themeroller.css
-
-https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css
-
-https://code.jquery.com/jquery-3.6.0.js
-
-https://code.jquery.com/jquery-3.6.0.min.js
-
-https://code.jquery.com/ui/1.13.2/jquery-ui.js
-
-https://code.jquery.com/jquery-migrate-3.5.2.js
+- jQuery Migrate 3.3.0 (non-minified):  
+  [https://code.jquery.com/jquery-migrate-3.3.0.js](https://code.jquery.com/jquery-migrate-3.3.0.js)
