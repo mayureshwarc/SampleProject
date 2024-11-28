@@ -30,3 +30,27 @@ Here are the links for both the **minified** and **non-minified** versions of **
 - [https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css](https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css)
 
 You can copy these links directly to use in your project. Let me know if you need anything else!
+
+Unfortunately, finding a definitively compatible version of jquery.layout.js for jQuery UI v1.13.2 might require some trial and error. Here's why and what you can do:
+The Challenge
+ * Limited Compatibility Information: The jQuery Layout plugin's documentation doesn't always explicitly state which versions of jQuery UI it supports.
+ * Potential Conflicts:  jQuery UI and the Layout plugin both manipulate the DOM, and conflicts can arise between different versions.
+Recommended Approach
+ * Start with the Latest Stable Release: Begin by trying the latest stable version of jquery.layout.js. You can find it on the plugin's website or GitHub repository.
+   * Website: https://layout.jquery-dev.net/
+   * GitHub: [invalid URL removed]
+ * Test Thoroughly:  After including the latest version, test your application thoroughly to check for any conflicts or unexpected behavior. Pay close attention to:
+   * Resizing:  Ensure that panes resize correctly and don't overlap or break the layout.
+   * Dragging:  Verify that draggable elements within the layout function as expected.
+   * Other jQuery UI components:  If you're using other jQuery UI components (like dialogs or tabs), make sure they work correctly within the layout.
+ * Try Older Versions if Necessary: If you encounter issues with the latest version, try progressively older releases of jquery.layout.js.  You can often find older releases in the GitHub repository's "Releases" section or through a web search.
+ * Check for Compatibility Notes: Look for any release notes or documentation that mention jQuery UI compatibility. This might give you hints about which versions work best together.
+Important Considerations
+ * jQuery Version: Ensure that your jQuery version is compatible with both jQuery UI v1.13.2 and the jquery.layout.js version you choose.
+ * Browser Compatibility: Test your layout in different browsers to ensure cross-browser compatibility.
+If you encounter specific errors, please provide the following, and I'll do my best to help:
+ * Error messages from the browser console.
+ * Relevant code snippets.
+ * Steps to reproduce the issue.
+I'm here to assist you in finding a compatible version! Let me know how it goes or if you have any further questions.
+https://layout.jquery-dev.net/
