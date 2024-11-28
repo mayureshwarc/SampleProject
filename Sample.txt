@@ -54,3 +54,8 @@ If you encounter specific errors, please provide the following, and I'll do my b
  * Steps to reproduce the issue.
 I'm here to assist you in finding a compatible version! Let me know how it goes or if you have any further questions.
 https://layout.jquery-dev.net/
+
+console.log("mylayout exists:", $('#mylayout').length > 0); 
+console.log("center-pane exists:", $('#center-pane').length > 0);
+console.log("south-pane exists:", $('#south-pane').length > 0);
+
