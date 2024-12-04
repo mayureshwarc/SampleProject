@@ -1,30 +1,164 @@
 public class Underlying 
 {
+    /// <summary>
+    /// Gets or sets the Id.
+    /// </summary>
+    /// <value>The Id.</value>
     public int Id { get; set; }
+
+    /// <summary>
+    /// Gets or sets the Underlying Id.
+    /// </summary>
+    /// <value>The Underlying Id.</value>
     public int Underlying_Id { get; set; }
+
+    /// <summary>
+    /// Gets or sets the Currency Code.
+    /// </summary>
+    /// <value>The Currency Code.</value> 
     public string CurrencyCode { get; set; }
+
+    /// <summary>
+    /// Gets or sets the Consensus Id.
+    /// </summary>
+    /// <value>The Consensus Id.</value>
     public int? Consensus_Id { get; set; }
+
+    /// <summary>
+    /// Gets or sets the Name.
+    /// </summary>
+    /// <value>The Name.</value>
     public string Name { get; set; }
+
+    /// <summary>
+    /// Gets or sets the Isin.
+    /// </summary>
+    /// <value>The Isin.</value>
     public string Isin { get; set; }
+
+    /// <summary>
+    /// Gets or sets the Mds Code.
+    /// </summary>
+    /// <value>The Mds Code.</value>
     public string MdsCode { get; set; }
+
+    /// <summary>
+    /// Gets or sets a value indicating whether it is a Devise.
+    /// </summary>
+    /// <value><c>true</c> if it is a Devise; otherwise, <c>false</c>.</value>
     public bool? IsDevise { get; set; }
+
+    /// <summary>
+    /// Gets or sets the Create Date.
+    /// </summary>
+    /// <value>The Create Date.</value>
     public DateTime? CreateDate { get; set; }
+
+    /// <summary>
+    /// Gets or sets the Admin Id.
+    /// </summary>
+    /// <value>The Admin Id.</value>
     public string AdminId { get; set; }
+
+    /// <summary>
+    /// Gets or sets a value indicating whether it is an Index.
+    /// </summary>
+    /// <value><c>true</c> if it is an Index; otherwise, <c>false</c>.</value>
     public bool? IsIndex { get; set; }
+
+    /// <summary>
+    /// Gets or sets the Reuters Code.
+    /// </summary>
+    /// <value>The Reuters Code.</value>
     public string ReutersCode { get; set; }
+
+    /// <summary>
+    /// Gets or sets the Olsen Code.
+    /// </summary>
+    /// <value>The Olsen Code.</value>
     public string OlsenCode { get; set; }
+
+    /// <summary>
+    /// Gets or sets the App Mobile Id.
+    /// </summary>
+    /// <value>The App Mobile Id.</value>
     public int? AppMobile_Id { get; set; }
+
+    /// <summary>
+    /// Gets or sets the Update Date.
+    /// </summary>
+    /// <value>The Update Date.</value>
     public DateTime? UpdateDate { get; set; }
-    public bool? EtsRed { get; set; }  // Assuming "Automatic" is a typo for EtsRed
+
+    /// <summary>
+    /// Gets or sets a value indicating whether it is Ets Red.
+    /// </summary>
+    /// <value><c>true</c> if it is Ets Red; otherwise, <c>false</c>.</value>
+    public bool? EtsRed { get; set; }
+
+    /// <summary>
+    /// Gets or sets the Status.
+    /// </summary>
+    /// <value>The Status.</value>
     public string Status { get; set; }
+
+    /// <summary>
+    /// Gets or sets the Isin2.
+    /// </summary>
+    /// <value>The Isin2.</value>
     public string Isin2 { get; set; }
+
+    /// <summary>
+    /// Gets or sets the Idc Code.
+    /// </summary>
+    /// <value>The Idc Code.</value>
     public string IdcCode { get; set; }
+
+    /// <summary>
+    /// Gets or sets the Barrier Monitoring Time.
+    /// </summary>
+    /// <value>The Barrier Monitoring Time.</value>
     public string BarrierMonitoringTime { get; set; }
+
+    /// <summary>
+    /// Gets or sets the Barrier Monitoring Time Zone.
+    /// </summary>
+    /// <value>The Barrier Monitoring Time Zone.</value>
     public string BarrierMonitoringTimeZone { get; set; }
+
+    /// <summary>
+    /// Gets or sets a value indicating whether it is Deleted By.
+    /// </summary>
+    /// <value><c>true</c> if Deleted By; otherwise, <c>false</c>.</value>
     public bool? DeletedBy { get; set; }
+
+    /// <summary>
+    /// Gets or sets the Official Legal Name.
+    /// </summary>
+    /// <value>The Official Legal Name.</value>
     public string OfficialLegalName { get; set; }
+
+    /// <summary>
+    /// Gets or sets the History Date.
+    /// </summary>
+    /// <value>The History Date.</value>
     public DateTime? HistoryDate { get; set; }
+
+    /// <summary>
+    /// Gets or sets a value indicating whether it is Deleted.
+    /// </summary>
+    /// <value><c>true</c> if Deleted; otherwise, <c>false</c>.</value>
     public string IsDeleted { get; set; }
+
+    /// <summary>
+    /// Gets or sets the Underlying Website Name.
+    /// </summary>
+    /// <value>The Underlying Website Name.</value>
     public string UnderlyingWebsiteName { get; set; }
+
+    /// <summary>
+    /// Gets or sets the Market Dat Source Code.
+    /// </summary>
+    /// <value>The Market Dat Source Code.</value>
     public string MarketDatSourceCode { get; set; }
 }
