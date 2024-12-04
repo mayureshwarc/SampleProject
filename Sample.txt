@@ -1,15 +1,17 @@
-Technology and Innovation Expertise
-I am passionate about staying at the forefront of technology and innovation. I actively seek opportunities to expand my knowledge, explore new technologies, and contribute to innovative solutions that benefit the project and the team. My key strengths in this area include:
- * Technical Proficiency: I possess a strong understanding of various technologies and frameworks relevant to the project, including [mention specific technologies like Java, Spring Boot, CI/CD tools, etc.]. I am proficient in utilizing these technologies to develop and deliver high-quality solutions.
- * Continuous Learning: I am committed to continuous learning and development. I actively participate in knowledge-sharing sessions, attend relevant training programs, and stay updated on the latest industry trends and best practices.
- * Innovative Thinking: I possess a creative and innovative mindset, always seeking new and improved ways to approach challenges and develop solutions. I enjoy exploring new technologies and experimenting with different approaches to find the most effective solutions.
- * Collaboration and Knowledge Sharing: I actively share my knowledge and expertise with colleagues, fostering a culture of collaboration and learning within the team. I believe in the power of collective intelligence and actively participate in discussions and brainstorming sessions to generate innovative ideas.
- * Adaptability: I am adaptable and quick to learn new technologies and frameworks. I am comfortable working with different tools and technologies and can quickly adapt to changing project requirements and technological advancements.
-I am dedicated to leveraging my technology and innovation expertise to contribute to the project's success and drive innovation within the team. I believe that continuous learning and a passion for technology are essential for delivering cutting-edge solutions in today's dynamic environment.
-Enhancements:
- * Focus on Technical Skills: The feedback highlights your proficiency in relevant technologies and frameworks.
- * Continuous Learning and Development: It emphasizes your commitment to staying updated with the latest technologies and industry trends.
- * Innovation and Creativity: It showcases your innovative mindset and your ability to explore new approaches and solutions.
- * Collaboration and Knowledge Sharing: It underscores your active participation in knowledge sharing and collaborative efforts.
- * Adaptability and Learning Agility: It highlights your ability to adapt to new technologies and changing project requirements.
-This revised feedback effectively conveys your passion for technology and your dedication to innovation. It aligns with the goal while providing a comprehensive and impactful self-assessment.
+public class Person
+{
+    public int Id { get; set; }
+    public string Name { get; set; }
+    public string Status { get; set; }
+}
+
+// Replace the Select part
+var filteredList = dataTable.AsEnumerable()
+    .Where(row => row.Field<string>(columnName) == filterValue)
+    .Select(row => new Person
+    {
+        Id = row.Field<int>("Id"),
+        Name = row.Field<string>("Name"),
+        Status = row.Field<string>("Status")
+    })
+    .ToList();
