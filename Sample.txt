@@ -1,17 +1,30 @@
-public class Person
+public class Underlying 
 {
     public int Id { get; set; }
+    public int Underlying_Id { get; set; }
+    public string CurrencyCode { get; set; }
+    public int? Consensus_Id { get; set; }
     public string Name { get; set; }
+    public string Isin { get; set; }
+    public string MdsCode { get; set; }
+    public bool? IsDevise { get; set; }
+    public DateTime? CreateDate { get; set; }
+    public string AdminId { get; set; }
+    public bool? IsIndex { get; set; }
+    public string ReutersCode { get; set; }
+    public string OlsenCode { get; set; }
+    public int? AppMobile_Id { get; set; }
+    public DateTime? UpdateDate { get; set; }
+    public bool? EtsRed { get; set; }  // Assuming "Automatic" is a typo for EtsRed
     public string Status { get; set; }
+    public string Isin2 { get; set; }
+    public string IdcCode { get; set; }
+    public string BarrierMonitoringTime { get; set; }
+    public string BarrierMonitoringTimeZone { get; set; }
+    public bool? DeletedBy { get; set; }
+    public string OfficialLegalName { get; set; }
+    public DateTime? HistoryDate { get; set; }
+    public string IsDeleted { get; set; }
+    public string UnderlyingWebsiteName { get; set; }
+    public string MarketDatSourceCode { get; set; }
 }
-
-// Replace the Select part
-var filteredList = dataTable.AsEnumerable()
-    .Where(row => row.Field<string>(columnName) == filterValue)
-    .Select(row => new Person
-    {
-        Id = row.Field<int>("Id"),
-        Name = row.Field<string>("Name"),
-        Status = row.Field<string>("Status")
-    })
-    .ToList();
