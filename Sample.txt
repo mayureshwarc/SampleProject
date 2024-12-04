@@ -1,13 +1,13 @@
-Subject: Following Up on Feedback - [Your Name]
-Hi Mehak,
-Thank you for taking the time to provide me with detailed feedback on [Date of previous feedback]. I appreciate you recognizing the improvements I've made in my deliveries since the mid-year review.
-I understand your concerns about the points you raised on [Date of second feedback]. I want to assure you that I've taken them seriously and have been actively working on them.
- * Availability:  While I understand your concern about my availability, I want to assure you that I've been consistently available and responsive, even beyond regular office hours.  For example, I've been working late, including Saturdays, and I also provided support while on leave to ensure smooth project continuity. I am committed to being readily available for any urgent matters and team collaborations.
- * ETS Development: I recently completed the development of the archived product module for the Web ETS project. I'm happy to report that it was delivered on time and has been running smoothly on production with zero bugs reported.
- * Production Issue Investigation: I've been actively involved in investigating and resolving production issues. I've provided detailed analysis and resolution steps in the recent Jira tickets [mention specific Jira ticket numbers if possible], demonstrating my commitment to thorough documentation and problem-solving.
- * Communication Skills: I'm continuously working on improving my verbal and written communication skills. I'm actively participating in team discussions, seeking feedback, and focusing on clear and concise communication in my emails and documentation.
- * [Address the other points specifically, as in the previous response]. For example: "To further improve my productivity and turnaround time, I've been utilizing [specific techniques or tools] and prioritizing tasks more effectively."
-I'm dedicated to continuous improvement and meeting the expectations of my role. I'm confident that you'll see further progress in the coming months. I welcome any further guidance or suggestions you may have.
-Thank you again for your support and feedback.
-Best regards,
-Mayureshwar
+It's great that you're taking the initiative to reflect on your performance and align it with your objectives! Here's how you can frame your self-appraisal feedback for this generic objective:
+Respect of Code of Conduct, Rules & Regulations
+I consistently demonstrate adherence to the company's Code of Conduct, rules, and regulations. I believe in maintaining high ethical standards and ensuring my actions align with the company's values. This includes:
+ * Acting with Integrity: I conduct myself professionally and ethically in all interactions with colleagues, clients, and partners.
+ * Compliance with Regulations: I am fully aware of and comply with all applicable laws, regulatory requirements, and company procedures.
+ * Upholding Ethical Standards: I prioritize the seven themes of the Code of Conduct – Customer Interest, Financial Security, Market Integrity, Professional Ethics, Respect for Persons, Group Protection, and Involvement within Society – in my daily work.
+ * Completion of Mandatory Training: I have successfully completed all mandatory Group training within the required deadlines, ensuring I stay updated on the latest compliance requirements and company policies.
+I am committed to maintaining a workplace that upholds the highest standards of professionalism and ethical conduct. I believe my actions consistently reflect this commitment.
+Additional Tips:
+ * Provide Specific Examples: Whenever possible, include specific examples of how you've demonstrated adherence to the Code of Conduct. This could include instances where you had to make ethical decisions, situations where you went above and beyond to ensure compliance, or times when you proactively educated yourself on new regulations.
+ * Connect to Company Values: Explicitly connect your actions to the company's values and mission. This shows that you understand the importance of the Code of Conduct in the broader context of the organization.
+ * Highlight Proactive Measures: If you've taken any proactive steps to promote ethical behavior or compliance within your team or department, be sure to mention them.
+By framing your self-appraisal in this way, you demonstrate your understanding of the objective and your commitment to upholding the company's values and standards.
