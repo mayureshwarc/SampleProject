@@ -1,36 +1,52 @@
-Here’s a concise 2000-character version of your response:  
+**Email to Manager**
 
----
+Subject: Analysis and Resolution for Underlying History Table Issue
 
-**Subject:** Feedback on Performance Appraisal Comments  
+Dear [Manager's Name],
 
-Dear [Manager's Name],  
+I would like to inform you about an issue related to the **Underlying History Page** feature, which I developed. 
 
-I would like to share my comments on the appraisal feedback, as I believe the rating provided does not accurately reflect my contributions, efforts, and dedication.  
+The tables `underlying_history` and `underlyingwebsite_history` are designed to log changes, but due to a known SQL behavior, when an `UPDATE` statement is executed on the main table without any actual data change, the associated trigger creates an unnecessary row in the history tables. This issue occurs both when updates are performed through the UI and by the agent `ImportUnderlyingDataSA`, resulting in multiple rows being inserted into the history table for the same ISIN without any actual change.
 
-1. **Technical Skills**:  
-   - As a senior team member, I have consistently handled the most challenging tasks, such as those in **Web ETS**, completing them under immense pressure and unrealistic deadlines.  
-   - I resolved critical bugs in **Project EQDPO**, ensuring seamless project functionality.  
-   - In **Web ETS**, I fixed a task previously rolled back after being developed by the most senior person. I successfully replicated and resolved the issue.  
-   - Additionally, I have regularly guided junior team members, offering technical support and mentorship to help them grow. This can be confirmed by team members themselves.  
-   - Despite these efforts, questioning my technical skills feels unjustified and undermines my contributions.  
+I have already analyzed the issue and documented the findings in the related Jira ticket. To resolve this, I propose modifying the trigger logic to ensure that it only inserts rows when there are actual changes in the data. 
 
-2. **Behavior**:  
-   - I resolved a significant production rollback issue caused by incorrect database harmonization suggested by a senior member. I fixed the issue without complaints, prioritizing the project's success.  
-   - I have always maintained a professional and collaborative attitude. It is disappointing to see my behavior being questioned when my focus has always been on delivering quality results.  
-
-3. **Availability**:  
-   - I have consistently prioritized my responsibilities, providing support during blocked leave, weekends, and after hours.  
-   - Even after receiving this feedback, I continue to work beyond normal hours, demonstrating my dedication. Questioning my availability feels baseless and unfair.  
-
-**Conclusion**:  
-I strongly feel the rating provided is biased and does not align with my performance. It creates a wrong impression despite my consistent hard work and contributions. While I respect the feedback process, I request a reevaluation of my performance.  
-
-Thank you for your consideration.  
+Please let me know if you have any concerns or require further clarification. 
 
 Best regards,  
 [Your Name]  
 
----  
+---
 
-This version is concise yet impactful and fits within the 2000-character limit. Let me know if further changes are needed!
+**Solution Implementation Steps (Technical Details)**  
+
+1. **Modify the Trigger Logic**:  
+   Update the SQL trigger to compare the `OLD` and `NEW` values before performing an insertion into the history table. This ensures that no new row is added if the `UPDATE` statement does not alter the data.  
+
+2. **Updated Trigger Example**:
+   ```sql
+   CREATE OR REPLACE TRIGGER trg_underlying_history
+   AFTER UPDATE ON main_table
+   FOR EACH ROW
+   BEGIN
+       IF (:OLD.column1 != :NEW.column1 OR :OLD.column2 != :NEW.column2 OR ...) THEN
+           INSERT INTO underlying_history (column1, column2, ...)
+           VALUES (:NEW.column1, :NEW.column2, ...);
+       END IF;
+   END;
+   ```
+
+   - Replace `column1`, `column2`, etc., with the actual columns in your table.
+   - Ensure all columns that are prone to changes are included in the comparison.
+
+3. **Test the Changes**:  
+   - Run test cases to verify that the history table is updated only when actual changes occur in the main table.
+   - Test updates from both the UI and the `ImportUnderlyingDataSA` agent.
+
+4. **Deploy the Updated Trigger**:  
+   - Apply the trigger modification to your development environment first.
+   - Perform regression testing to ensure no unintended side effects occur.
+
+5. **Monitor Post-Deployment**:  
+   - After deploying to production, monitor the history table to confirm that unnecessary rows are no longer being inserted.
+
+Let me know if you need additional clarification on implementing this solution.
