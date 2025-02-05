@@ -1,31 +1,46 @@
-Sure, here is the text extracted from the email in the image:
-CHAVAN Mayureshwar
-To KARNIK Nrupen
-Reply  →
-Internal
-HI KARNIK Nrupen,
-I am reaching out to report significant concerns about my current work environment, specifically the conduct of my manager, Mehak Jain, and her manager, Disha Gupta which I believe constitutes harassment and is affecting my ability to perform effectively.
-Background and Contributions
-Since joining ISPL, I have dedicated over five years to the company, consistently delivering quality work across multiple departments.
-I initially worked in the BOTW department, where I received positive ratings during tenure for my performance, led critical deliveries, and earned a retention bonus for my commitment.
-After BOTW's closure in June 2023, I transferred to my current department, where I successfully managed the Exane migration without any issues, achieving a better rating for that year.
-Recent Changes and Current Issues
-Since [past] few months, following a management change, my experience has shifted dramatically. From the outset, I have felt targeted by my new reporting authority, Mehak Jain, and her manager, Disha Gupta, often without clear or justified reasoning.
-Below [are] some examples of the issues I am facing:
- * Excessive and Unreasonable Work Hours: I am frequently asked to log out late and work on Saturdays, which I comply with. Recently, I was instructed to work overnight to resolve a longstanding issue, despite having flagged it a month ago.
- * Disregard for Personal Circumstances: Despite notifying my managers that my wife and daughter were unwell, they continued to demand that I stay logged in and complete development tasks overnight.
- * Lack of Respect for Leave: During my block leave, I was called repeatedly with work queries, and I still provided support. Recently, I was threatened with cancellation of my planned leave and warned that I might be put on a Performance Improvement Plan (PIP) for taking an unplanned leave, which I find unfair and punitive.
- * Inappropriate Assignment of Blame: I resolved a critical production bug caused by a development Mehak authored, finding and fixing the issue after she struggled to replicate it. Additionally, after completing an assignment per my lead's analysis, I was later blamed for a production issue arising from this work, despite the code having passed testing on UAT and client review.
- * Continuous Monitoring and Threat of PIP: Every month, I am asked to provide incident reports for my work. Despite my proven track record and having resolved issues proactively, I am continuously threatened with a PIP, which only adds to the stress.
-Request for Support
-The above incidents, compounded over the past few months, have created a hostile work environment, impacting my motivation and well-being. I am committed to delivering high-quality work, but I am finding it increasingly difficult to do so under these circumstances.
-I am reaching out to [you] with the hope that my concerns will be addressed fairly, and that I will receive support in fostering a more positive and respectful work environment.
-Thank you for your attention to this matter. I am happy to provide supporting documentation, including message and call records during the block leave.
-Regards,
-BNP PARIBAS | The bank for a changing world
-Mayureshwar CHAVAN
-DEVELOPER
-Nirion Knowledge Park, Block 83 Building, Village Pahadi,
-Next to HUB Mall, Goregaon (E), Mumbai, 400063 400063
-Mobile: 8898812254 | Mobile: 0898812254
-[Some text is cut off at the bottom of the image]
+Here’s a strong and professional follow-up email addressing your concerns while keeping it formal and direct.  
+
+---
+
+**Subject:** Urgent Follow-up: Workplace Harassment and Unfair Treatment  
+
+Dear [HR Representative's Name],  
+
+I am writing to follow up on the concerns I raised in my previous email regarding the hostile work environment created by my manager, Mehak Jain, and her manager, Disha Gupta. Despite bringing these issues to your attention, the situation has only worsened, and I am deeply disappointed by the lack of action taken.  
+
+### 1. Unfair Performance Rating & Continued Harassment  
+After raising my concerns, I was unfairly given a performance rating of 5, which I accepted in good faith to move forward in my career. However, despite my efforts to focus on my work, there is an ongoing conspiracy against me, including false accusations and an attempt to discredit my contributions.  
+
+### 2. False Allegations & Unjustified Criticism  
+In our recent meetings, several false allegations have been made against me:  
+- **Claim: My releases have been rolled back frequently**  
+  - **Fact:** I am attaching data from last year’s Web ETS project releases, which prove the success of my deployments. For the few incidents that did occur, my responsibility has been unfairly exaggerated.  
+- **Claim: I take excessive time for development**  
+  - **Fact:** I request a proper analysis of my JIRA records to verify the timelines of my development tasks. There is no evidence that I have delayed any feature development.  
+- **Claim: I am not available enough**  
+  - **Fact:** Due to extreme stress and workplace pressure, I have had to visit a doctor regularly. However, I have consistently stretched my working hours, worked weekends, and remained available for work-related queries. I expect a clear answer—what action has been taken against those who violated my block leave by repeatedly calling and engaging me in work discussions? Does ISPL policy allow managers to disrupt an employee’s block leave?  
+
+### 3. Lack of Proper Management & Leadership  
+There is a serious leadership failure in my team, which is directly contributing to these issues:  
+- **No Formal Requirement Gathering:** There is no structured documentation of requirements. Even when our team lead documents something, it lacks details.  
+- **Unrealistic Timelines:** Commitments are made to the client without proper analysis, and when I request time for impact analysis, I am told to proceed with development first. Later, if issues arise, I am blamed. JIRA comments will verify this pattern.  
+- **Lack of Support from Leadership:** My managers do not provide proper requirements, do not review JIRA updates, fail to provide technical guidance, and approve pull requests without reviewing them. If they are not fulfilling their responsibilities, what is their role in the team?  
+- **Intentional Targeting:** This pattern of mismanagement and lack of accountability suggests a deliberate effort to set me up for failure. The ongoing bi-weekly meetings feel less like a platform for support and more like a targeted blame game against me.  
+
+### 4. Detrimental Impact on My Health & Well-Being  
+The continued harassment, unjustified criticism, and leadership failures have had a severe impact on my mental health. I have attached my latest medical consultation report from my psychiatrist, which confirms that my medication dosage has increased. I have been advised to take two weeks of medical leave, and my doctor has warned that failure to rest may lead to hospitalization and shock treatment.  
+
+I have applied for two weeks of leave and request that my medical details remain confidential. I am seeking your immediate intervention and action on this matter. I need assurance that upon my return, I will not continue to face this toxic work environment.  
+
+### 5. Urgent Questions for HR:  
+- What action has been taken in response to my initial complaint?  
+- Where is ISPL’s policy on employee well-being and mental health?  
+- Where is ISPL’s policy on work-life balance and protection from harassment?  
+- Is it allowed for managers to repeatedly call an employee on block leave?  
+
+This is no longer just a workplace issue—it is a serious matter affecting my mental and physical well-being. I expect a swift and transparent response regarding the steps being taken to address this situation.  
+
+I hope ISPL takes this matter seriously and demonstrates its commitment to employee welfare. I look forward to your prompt response.  
+
+Sincerely,  
+[Your Name]
