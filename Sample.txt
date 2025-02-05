@@ -1,52 +1,31 @@
-**Email to Manager**
-
-Subject: Analysis and Resolution for Underlying History Table Issue
-
-Dear [Manager's Name],
-
-I would like to inform you about an issue related to the **Underlying History Page** feature, which I developed. 
-
-The tables `underlying_history` and `underlyingwebsite_history` are designed to log changes, but due to a known SQL behavior, when an `UPDATE` statement is executed on the main table without any actual data change, the associated trigger creates an unnecessary row in the history tables. This issue occurs both when updates are performed through the UI and by the agent `ImportUnderlyingDataSA`, resulting in multiple rows being inserted into the history table for the same ISIN without any actual change.
-
-I have already analyzed the issue and documented the findings in the related Jira ticket. To resolve this, I propose modifying the trigger logic to ensure that it only inserts rows when there are actual changes in the data. 
-
-Please let me know if you have any concerns or require further clarification. 
-
-Best regards,  
-[Your Name]  
-
----
-
-**Solution Implementation Steps (Technical Details)**  
-
-1. **Modify the Trigger Logic**:  
-   Update the SQL trigger to compare the `OLD` and `NEW` values before performing an insertion into the history table. This ensures that no new row is added if the `UPDATE` statement does not alter the data.  
-
-2. **Updated Trigger Example**:
-   ```sql
-   CREATE OR REPLACE TRIGGER trg_underlying_history
-   AFTER UPDATE ON main_table
-   FOR EACH ROW
-   BEGIN
-       IF (:OLD.column1 != :NEW.column1 OR :OLD.column2 != :NEW.column2 OR ...) THEN
-           INSERT INTO underlying_history (column1, column2, ...)
-           VALUES (:NEW.column1, :NEW.column2, ...);
-       END IF;
-   END;
-   ```
-
-   - Replace `column1`, `column2`, etc., with the actual columns in your table.
-   - Ensure all columns that are prone to changes are included in the comparison.
-
-3. **Test the Changes**:  
-   - Run test cases to verify that the history table is updated only when actual changes occur in the main table.
-   - Test updates from both the UI and the `ImportUnderlyingDataSA` agent.
-
-4. **Deploy the Updated Trigger**:  
-   - Apply the trigger modification to your development environment first.
-   - Perform regression testing to ensure no unintended side effects occur.
-
-5. **Monitor Post-Deployment**:  
-   - After deploying to production, monitor the history table to confirm that unnecessary rows are no longer being inserted.
-
-Let me know if you need additional clarification on implementing this solution.
+Sure, here is the text extracted from the email in the image:
+CHAVAN Mayureshwar
+To KARNIK Nrupen
+Reply  →
+Internal
+HI KARNIK Nrupen,
+I am reaching out to report significant concerns about my current work environment, specifically the conduct of my manager, Mehak Jain, and her manager, Disha Gupta which I believe constitutes harassment and is affecting my ability to perform effectively.
+Background and Contributions
+Since joining ISPL, I have dedicated over five years to the company, consistently delivering quality work across multiple departments.
+I initially worked in the BOTW department, where I received positive ratings during tenure for my performance, led critical deliveries, and earned a retention bonus for my commitment.
+After BOTW's closure in June 2023, I transferred to my current department, where I successfully managed the Exane migration without any issues, achieving a better rating for that year.
+Recent Changes and Current Issues
+Since [past] few months, following a management change, my experience has shifted dramatically. From the outset, I have felt targeted by my new reporting authority, Mehak Jain, and her manager, Disha Gupta, often without clear or justified reasoning.
+Below [are] some examples of the issues I am facing:
+ * Excessive and Unreasonable Work Hours: I am frequently asked to log out late and work on Saturdays, which I comply with. Recently, I was instructed to work overnight to resolve a longstanding issue, despite having flagged it a month ago.
+ * Disregard for Personal Circumstances: Despite notifying my managers that my wife and daughter were unwell, they continued to demand that I stay logged in and complete development tasks overnight.
+ * Lack of Respect for Leave: During my block leave, I was called repeatedly with work queries, and I still provided support. Recently, I was threatened with cancellation of my planned leave and warned that I might be put on a Performance Improvement Plan (PIP) for taking an unplanned leave, which I find unfair and punitive.
+ * Inappropriate Assignment of Blame: I resolved a critical production bug caused by a development Mehak authored, finding and fixing the issue after she struggled to replicate it. Additionally, after completing an assignment per my lead's analysis, I was later blamed for a production issue arising from this work, despite the code having passed testing on UAT and client review.
+ * Continuous Monitoring and Threat of PIP: Every month, I am asked to provide incident reports for my work. Despite my proven track record and having resolved issues proactively, I am continuously threatened with a PIP, which only adds to the stress.
+Request for Support
+The above incidents, compounded over the past few months, have created a hostile work environment, impacting my motivation and well-being. I am committed to delivering high-quality work, but I am finding it increasingly difficult to do so under these circumstances.
+I am reaching out to [you] with the hope that my concerns will be addressed fairly, and that I will receive support in fostering a more positive and respectful work environment.
+Thank you for your attention to this matter. I am happy to provide supporting documentation, including message and call records during the block leave.
+Regards,
+BNP PARIBAS | The bank for a changing world
+Mayureshwar CHAVAN
+DEVELOPER
+Nirion Knowledge Park, Block 83 Building, Village Pahadi,
+Next to HUB Mall, Goregaon (E), Mumbai, 400063 400063
+Mobile: 8898812254 | Mobile: 0898812254
+[Some text is cut off at the bottom of the image]
