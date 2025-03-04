@@ -1,5 +1,8 @@
+Certainly! Below is the same guide, formatted in plain text so that when you paste it into Outlook, the structure will be maintained. You can copy the following text and paste it directly into your email:
 
-To set up CI/CD for MS SQL database scripts in Jenkins, follow these steps:
+---
+
+**Setting Up CI/CD for MS SQL Database Scripts in Jenkins**
 
 ### Prerequisites:
 1. **Jenkins** is installed and running.
@@ -7,11 +10,13 @@ To set up CI/CD for MS SQL database scripts in Jenkins, follow these steps:
 3. **SQLCMD** or **PowerShell** script can be used for executing database scripts.
 4. **Database access** and credentials are configured for Jenkins to connect to the SQL Server.
 
+---
+
 ### Step-by-Step Process:
 
 #### Step 1: Set up a Git Repository
-1. **Version Control**: Ensure that your MS SQL database scripts (e.g., schema changes, stored procedures) are stored in a **Git repository** (e.g., GitHub, GitLab, Bitbucket).
-2. This allows Jenkins to pull the latest database scripts and perform necessary tasks.
+- Ensure that your MS SQL database scripts (e.g., schema changes, stored procedures) are stored in a **Git repository** (e.g., GitHub, GitLab, Bitbucket).
+- This allows Jenkins to pull the latest database scripts and perform necessary tasks.
 
 #### Step 2: Install Jenkins Plugins
 You need a few Jenkins plugins to help with SQL deployment.
@@ -43,8 +48,11 @@ You can either use a **Freestyle job** or a **Pipeline job** in Jenkins. Below i
 3. **Pipeline Script**:
    - Under **Pipeline**, select **Pipeline script** and add the following steps to automate the process.
 
-##### Step 4: Define the Pipeline Script (Jenkinsfile)
-Here’s an example **Jenkinsfile** for deploying SQL scripts to SQL Server using `sqlcmd`.
+---
+
+### Step 4: Define the Pipeline Script (Jenkinsfile)
+
+Here’s an example **Jenkinsfile** for deploying SQL scripts to SQL Server using `sqlcmd`:
 
 ```groovy
 pipeline {
@@ -124,23 +132,37 @@ environment {
 }
 ```
 
-#### Step 6: Run the Job
+---
+
+### Step 6: Run the Job
 Once you have configured the pipeline, click **Save** and **Build Now**.
 
 - Jenkins will automatically pull the latest SQL scripts, execute them on your SQL Server, and deploy the changes to your database.
 
-#### Step 7: Automate Trigger
+---
+
+### Step 7: Automate Trigger
 You can set up automatic triggers for your Jenkins job, such as:
 - **Poll SCM**: To trigger the job when changes are detected in the Git repository.
 - **Webhooks**: Configure GitHub or GitLab webhooks to trigger Jenkins builds automatically on push events.
 
-#### Step 8: Monitoring and Logs
+---
+
+### Step 8: Monitoring and Logs
 - Check the **Console Output** in Jenkins to monitor the progress of each stage.
 - You can add additional logic in your pipeline to handle failures or rollbacks, ensuring safer deployments.
+
+---
 
 ### Additional Tips:
 - **SQL Server Authentication**: If you're using **Windows Authentication**, you may need to adjust the `sqlcmd` command to use integrated security (`-E` instead of `-U` and `-P`).
 - **Error Handling**: Ensure that you handle errors and rollbacks in case something goes wrong during the deployment.
 - **Database Unit Tests**: Incorporate unit tests for SQL using tools like **tSQLt** to validate database changes before deployment.
 
+---
+
 This setup automates the process of running and deploying your MS SQL database scripts using Jenkins CI/CD pipelines.
+
+---
+
+You can now copy this text into Outlook, and it should maintain its formatting and structure!
