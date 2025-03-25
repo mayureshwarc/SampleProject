@@ -1,1 +1,37 @@
-Throughout my time on this project, I have consistently met deadlines and communicated any delays in advance, ensuring transparency in all my work. Despite gaps in requirements, I took the initiative to analyze and complete changes to keep the project moving forward. Even in high-pressure situations like Web ETS, where there was little time for thorough analysis, I delivered on time while maintaining quality. I always informed my seniors about my work, reviewed my changes with them, and ensured that everything passed in the UAT environment. However, when issues arose in production, I was unfairly blamed for mistakes beyond my control, while accountability at higher levels was overlooked. I tried to address these issues correctly afterward but received no support from my team, making it even more challenging. Additionally, I provided proof of my work in every meeting, highlighted it in Jira ticket comments, and communicated via Teams and email, yet these were ignored with the excuse that seniors did not have time to check. If that was the case, I question what kind of communication was expected from me. The work environment became so stressful that it seriously affected my health, which no professional should have to endure. Instead of fostering collaboration and fair reviews, I was repeatedly made a scapegoat, with biased evaluations and a lack of constructive feedback. Accountability should be shared, and I strongly believe that a healthy work environment relies on teamwork, transparency, and fairness.
+IF NOT EXISTS (SELECT * FROM sys.tables WHERE name = 'Employee' AND type = 'U')
+BEGIN
+    CREATE TABLE Employee (
+        Id INT IDENTITY(1,1) PRIMARY KEY,
+        Name NVARCHAR(100) NOT NULL,
+        Age INT,
+        Department NVARCHAR(50),
+        Salary DECIMAL(10,2)
+    );
+    
+    -- Insert sample data
+    INSERT INTO Employee (Name, Age, Department, Salary)
+    VALUES ('John Doe', 30, 'IT', 60000),
+           ('Jane Smith', 28, 'HR', 50000),
+           ('Michael Brown', 35, 'Finance', 70000);
+END;
+
+IF EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'GetEmployee')
+BEGIN
+    DROP PROCEDURE GetEmployee;
+END;
+GO
+
+CREATE PROCEDURE GetEmployee
+AS
+BEGIN
+    SET NOCOUNT ON;
+    SELECT * FROM Employee;
+END;
+GO
+
+
+UPDATE Employee
+SET Salary = 75000
+WHERE Name = 'John Doe';
+
+
