@@ -1,10 +1,1 @@
- **Subject:** Resignation  
-
-Dear [HR Manager's Name],  
-
-I am resigning from my position at [Bank Name] due to a toxic work environment created by my immediate manager and their superior. The immediate manager lacks authority and problem-solving ability, functioning merely as a puppet, while the manager's manager exhibits ego-driven leadership. Instead of fostering collaboration, they resort to intimidation—threatening PIPs over trivial matters and publicly humiliating team members. This hostile atmosphere has made it impossible to work with dignity, and I see no growth or recognition here.  
-
-I appreciate the organization but can no longer tolerate this unprofessional behavior.  
-
-Sincerely,  
-[Your Name]  
+Throughout my time on this project, I have consistently met deadlines and communicated any delays in advance, ensuring transparency in all my work. Despite gaps in requirements, I took the initiative to analyze and complete changes to keep the project moving forward. Even in high-pressure situations like Web ETS, where there was little time for thorough analysis, I delivered on time while maintaining quality. I always informed my seniors about my work, reviewed my changes with them, and ensured that everything passed in the UAT environment. However, when issues arose in production, I was unfairly blamed for mistakes beyond my control, while accountability at higher levels was overlooked. I tried to address these issues correctly afterward but received no support from my team, making it even more challenging. Additionally, I provided proof of my work in every meeting, highlighted it in Jira ticket comments, and communicated via Teams and email, yet these were ignored with the excuse that seniors did not have time to check. If that was the case, I question what kind of communication was expected from me. The work environment became so stressful that it seriously affected my health, which no professional should have to endure. Instead of fostering collaboration and fair reviews, I was repeatedly made a scapegoat, with biased evaluations and a lack of constructive feedback. Accountability should be shared, and I strongly believe that a healthy work environment relies on teamwork, transparency, and fairness.
